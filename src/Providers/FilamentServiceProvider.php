@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace VendorName\Skeleton\Providers;
+namespace AdminKit\Polls\Providers;
 
 use Filament\PluginServiceProvider;
-use VendorName\Skeleton\UI\Filament\Resources\SingleNameResource;
+use AdminKit\Polls\UI\Filament\Resources\PollResource;
 
 class FilamentServiceProvider extends PluginServiceProvider
 {
-    public static string $name = ':package_slug_without_prefix';
+    public static string $name = 'polls';
 
     protected array $resources = [
-        SingleNameResource::class,
+        PollResource::class,
     ];
 }

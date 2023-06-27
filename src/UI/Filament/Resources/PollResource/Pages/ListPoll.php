@@ -1,16 +1,16 @@
 <?php
 
-namespace VendorName\Skeleton\UI\Filament\Resources\SingleNameResource\Pages;
+namespace AdminKit\Polls\UI\Filament\Resources\PollResource\Pages;
 
 use Filament\Pages\Actions;
 use Filament\Resources\Pages\ListRecords;
-use VendorName\Skeleton\UI\Filament\Resources\SingleNameResource;
+use AdminKit\Polls\UI\Filament\Resources\PollResource;
 
-class ListSingleName extends ListRecords
+class ListPoll extends ListRecords
 {
     use ListRecords\Concerns\Translatable;
 
-    protected static string $resource = SingleNameResource::class;
+    protected static string $resource = PollResource::class;
 
     protected function getActions(): array
     {

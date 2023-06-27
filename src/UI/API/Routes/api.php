@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use VendorName\Skeleton\UI\API\Controllers\SingleNameController;
+use AdminKit\Polls\UI\API\Controllers\PollController;
 
-Route::get('/:package_slug_without_prefix', [SingleNameController::class, 'index']);
-Route::get('/:package_slug_without_prefix/{id}', [SingleNameController::class, 'show']);
+Route::get('/polls', [PollController::class, 'index']);
+Route::get('/polls/{id}', [PollController::class, 'show']);

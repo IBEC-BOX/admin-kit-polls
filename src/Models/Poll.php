@@ -1,18 +1,18 @@
 <?php
 
-namespace VendorName\Skeleton\Models;
+namespace AdminKit\Polls\Models;
 
 use AdminKit\Core\Abstracts\Models\AbstractModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Spatie\Translatable\HasTranslations;
-use VendorName\Skeleton\Database\Factories\SingleNameFactory;
+use AdminKit\Polls\Database\Factories\PollFactory;
 
-class SingleName extends AbstractModel
+class Poll extends AbstractModel
 {
     use HasFactory;
     use HasTranslations;
 
-    protected $table = 'migration_table_name';
+    protected $table = 'admin_kit_polls';
 
     protected $fillable = [
         'title',
@@ -26,8 +26,8 @@ class SingleName extends AbstractModel
         'title',
     ];
 
-    protected static function newFactory(): SingleNameFactory
+    protected static function newFactory(): PollFactory
     {
-        return new SingleNameFactory();
+        return new PollFactory();
     }
 }
